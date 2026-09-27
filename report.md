@@ -5,9 +5,11 @@ Date: Kadyrbay
 
 ## 1. Decisions and prediction
 
-Why did you choose these two topic counts?
+I chose 3 and 7 topics for comparison. From my initial analysis, I noticed several possible groups in the headlines, such as sports, IT and clickbait. However, some headlines were ambiguous and could belong to more than one group. Therefore, I wanted to compare two different numbers of topics and see which model creates more understandable and useful groups.
 
-Which single preprocessing issue did you test, why, and what benefit/cost did you predict before testing?
+After running the first models, I noticed that some common Lithuanian words, such as “ir” and “su”, appeared among the important topic words. The original preprocessing removed English stopwords, but it did not remove Lithuanian stopwords.
+
+For my preprocessing experiment, I decided to add Lithuanian stopwords to the stopword list. I predicted that this would make the topics easier to understand because common words that do not give much information would be removed. However, a possible cost is that removing more words could remove some useful information from short headlines.
 
 ## 2. Three-run comparison
 
